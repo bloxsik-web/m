@@ -1,0 +1,44 @@
+[
+    {
+      "name": "мало-помалу",
+      "artist": "mzlff",
+      "src": "smogoria/malo.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "медленный танец",
+      "artist": "mzlff", 
+      "src": "smogoria/dan.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "карусель",
+      "artist": "mzlff",
+      "src": "smogoria/kar.mp3", 
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "автодром",
+      "artist": "mzlff",
+      "src": "smogoria/drom.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "свободное падение", 
+      "artist": "mzlff",
+      "src": "smogoria/pad.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "комната смеха",
+      "artist": "mzlff",
+      "src": "smogoria/smex.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "эпилог",
+      "artist": "mzlff",
+      "src": "smogoria/ep.mp3",
+      "cover": "smogoria/mz.jpg"
+    }
+  ]
