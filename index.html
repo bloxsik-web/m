@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firefy Music</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash" class="splash">
+    <img id="splashGif" src="pipiska/anim_logo.gif" alt="Загрузка...">
+    <div class="splash-text">Загружается...</div>
+  </div>
+
+  <!-- App -->
+  <div id="app" class="app hidden">
+    <header class="app-header">
+      <img id="logoImg" class="app-logo" src="pipiska/static_logo.png" alt="Firefy logo" />
+      <h1>Firefy Music</h1>
+      <div class="actions">
+        <div id="account" class="account" title="Аккаунт">
+          <img id="accountAvatar" class="avatar" src="pipiska/place.jpg" alt="avatar" />
+          <span id="accountName" class="account-name">user</span>
+          <div id="accountMenu" class="account-menu hidden">
+            <label class="menu-row">Ник
+              <input id="nameInput" type="text" placeholder="user" />
+            </label>
+            <label class="menu-row">Аватар
+              <input id="avatarInput" type="file" accept="image/*" />
+            </label>
+            <div class="menu-actions">
+              <button id="saveAccountBtn" type="button" class="btn">Сохранить</button>
+              <button id="resetAccountBtn" type="button" class="icon-btn">Сброс</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section id="hero" class="hero">
+        <div class="hero-inner">
+          <div class="hero-icon">▶</div>
+          <div class="hero-title">Чарт треков</div>
+          <div class="hero-sub">Лучший топ треков.</div>
+        </div>
+        <div class="hero-bg"></div>
+      </section>
+
+      <section class="player">
+        <div class="cover-and-title">
+          <img id="coverImg" class="cover" alt="Обложка" src="" />
+          <div class="titles">
+            <div class="track-title" id="trackTitle">Ничего не играет</div>
+            <div class="track-artist" id="trackArtist"></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="prevBtn" class="icon-btn" title="Предыдущий">⏮️</button>
+          <button id="playPauseBtn" class="icon-btn" title="Воспроизвести/Пауза">▶️</button>
+          <button id="nextBtn" class="icon-btn" title="Следующий">⏭️</button>
+        </div>
+
+        <div class="progress">
+          <span id="currentTime">0:00</span>
+          <input id="seekBar" type="range" min="0" max="100" value="0">
+          <span id="duration">0:00</span>
+        </div>
+
+        <div class="volume">
+          <span>🔊</span>
+          <input id="volumeBar" type="range" min="0" max="1" step="0.01" value="1">
+        </div>
+      </section>
+
+      <section class="new-releases">
+        <div class="new-releases-header">
+          <h2>Новые релизы</h2>
+          <div class="new-releases-arrow">→</div>
+        </div>
+        <div class="new-releases-grid">
+          <div class="release-card">
+            <div class="artist-portrait">
+              <img src="pipiska/mzlff.png" alt="mzlff" />
+            </div>
+            <div class="artist-name">mzlff</div>
+            <div class="release-details">
+              <div class="release-artwork">
+                <img src="covers/anabioz.png" alt="PHANTASMAGORIA" />
+              </div>
+              <div class="release-info">
+                <div class="release-title">PHANTASMAGORIA</div>
+                <div class="release-meta">альбом • 26 сентября</div>
+              </div>
+              <div class="release-controls">
+                <button class="control-btn play-pause-btn" title="Воспроизвести/Пауза" onclick="playAlbum()">▶</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="chartSection" class="chart">
+        <div class="version-badge" id="versionBadge">1.0.0</div>
+        <div class="chart-header">
+          <h2></h2>
+          <button id="chartToggleBtn" class="icon-btn" type="button" title="Воспроизвести чарт">▶️</button>
+        </div>
+        <ul id="chartList" class="chart-list"></ul>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Audio element (hidden) -->
+  <audio id="audio"></audio>
+
+  <!-- Version Modal -->
+  <div id="versionModal" class="version-modal hidden">
+    <div class="version-modal-content">
+      <div class="version-modal-header">
+        <h3>ЧТО НОВОГО?</h3>
+        <button id="versionModalClose" class="version-modal-close">×</button>
+      </div>
+      <div class="version-modal-body">
+        <div class="version-entry">
+          <div class="version-number">1.0.0</div>
+          <div class="version-date">1 января 2025 г.</div>
+          <div class="version-description">
+            Добро пожаловать в Firefy Music! Первая версия с базовым функционалом воспроизведения музыки и красивым интерфейсом.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+<!--
+Совет: если длительность вашей GIF ≠ времени скрытия заставки,
+отредактируйте SPLASH_DURATION_MS в app.js.
+-->
+</html>
+
+
