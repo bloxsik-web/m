@@ -1,0 +1,82 @@
+{
+  "tracks": [
+    {
+      "name": "анабиоз",
+      "artist": "mzlff",
+      "src": "tracks/anabioz.mp3",
+      "cover": "covers/anabioz.png"
+    },
+    {
+      "name": "Сельская давалка",
+      "artist": "kussia88",
+      "src": "tracks/davalka.mp3",
+      "cover": "covers/davalka.png"
+    },
+    {
+      "name": "Так похуй",
+      "artist": "madk1d",
+      "src": "tracks/pox.mp3",
+      "cover": "covers/pox.png"
+    },
+    {
+      "name": "ПАПА",
+      "artist": "Темный принц",
+      "src": "tracks/papa.mp3",
+      "cover": "covers/papa.png"
+    },
+    {
+      "name": "Отвратительный король",
+      "artist": "Темный принц",
+      "src": "tracks/korol.mp3",
+      "cover": "covers/korol.png"
+    },
+    {
+      "name": "миниюбка",
+      "artist": "emoslut666",
+      "src": "tracks/ubka.mp3",
+      "cover": "covers/ubka.png"
+    },
+    {
+      "name": "мало-помалу",
+      "artist": "mzlff",
+      "src": "smogoria/malo.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "медленный танец",
+      "artist": "mzlff",
+      "src": "smogoria/dan.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "карусель",
+      "artist": "mzlff",
+      "src": "smogoria/kar.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "автодром",
+      "artist": "mzlff",
+      "src": "smogoria/drom.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "свободное падение",
+      "artist": "mzlff",
+      "src": "smogoria/pad.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "комната смеха",
+      "artist": "mzlff",
+      "src": "smogoria/smex.mp3",
+      "cover": "smogoria/mz.jpg"
+    },
+    {
+      "name": "эпилог",
+      "artist": "mzlff",
+      "src": "smogoria/ep.mp3",
+      "cover": "smogoria/mz.jpg"
+    }
+  ]
+}
